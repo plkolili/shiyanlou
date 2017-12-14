@@ -8,7 +8,7 @@ except ValueError:
 #if __name__=='__main__':
 #    for arg in sys.argv:
 #        print(arg)
-b=a-0-3500
+b=a-a*0.165-3500
 
 if b<=0:
     c=0
