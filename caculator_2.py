@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import sys
-
+# try github
 for arg in sys.argv[1:]:
     spl=arg.split(':')
     a=int(spl[1])
