@@ -29,5 +29,4 @@ for arg in sys.argv[1:]:
     else:
         c=b*0.45-13505
 #    print(number,':')
-
-print（number，format（C,format(a-c-a*0.165,".2f"),sep=':')
+    print（number，format（C,format(a-c-a*0.165,".2f"),sep=':')
