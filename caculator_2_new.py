@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import sys
-def  get_tax
+def  get_tax(employee):
     employee_paytax=employee.copy()              #字典的拷贝
     for key,value in employee_paytax.items():    #遍历字典的内容
         b=value-value*0.165-3500
@@ -21,7 +21,7 @@ def  get_tax
         else:
             c=b*0.45-13505
         employee_paytax[key]=value-value*0.165-c #更新字典的值
-        return employee_paytax
+        return employee_paytax #return dictionary
 
 if __name__=='__main__':
     try:
@@ -30,12 +30,12 @@ if __name__=='__main__':
             raise ParameterNumError
         for s in sys.argv[1:]:
             data=s.split(':')
-            employee[data[0]]=int(data[1]) #初始字典数据
+            employee[data[0]]=int(data[1]) #初始字典数据, like input
         employee_paytax=get_tax(employee)  #执行函数的过程,得到一个新的字典
         for key,value in employee_paytax.items():
-            print (key+':'+str(format(value,'.2f'))
+            print (key+':'+str(format(value,'.2f')))
     except (ParameterNumError,ValueError):
-         print('Parameter Error')
+        print('Parameter Error')
 
 		
 		
