@@ -1,7 +1,7 @@
 from flask import Flask,render_template
 import os,json
 app=Flask(__name__)
-app.config['TEMPLATE_AUTO_RELOAD']=True
+app.config['TEMPLATES_AUTO_RELOAD']=True
 @app.route('/')
 def index():
     path='/home/shiyanlou/files'
